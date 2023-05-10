@@ -1,0 +1,28 @@
+//copy contructor
+class aa
+{
+	int  sum,i,n;
+	public:
+	aa()
+	{
+		i=8;
+		n=9;
+	}
+	aa(aa &t)
+	{
+		sum=t.i+t.n;
+		//cout<<"the sum is"<<sum;
+	}
+	void show()
+	{
+		cout<<"Hello ayush the sum is";
+		cout<<sum;
+	}
+};
+int main()
+{
+  aa ob1;
+  aa ob2(ob1);
+  ob2.show();//important thing
+  	return 0;
+}	
